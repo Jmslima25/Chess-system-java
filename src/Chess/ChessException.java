@@ -1,6 +1,8 @@
 package Chess;
 
-public class ChessException extends  RuntimeException {
+import boardgame.boardException;
+
+public class ChessException extends  boardException {
 	private static final long serialVersionUID = 1L;
 	
 	public ChessException(String msg) {
