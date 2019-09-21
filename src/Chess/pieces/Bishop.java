@@ -17,7 +17,7 @@ public class Bishop  extends ChessPiece{
 		return "B";
 	}
 	//NW
-	public boolean[][] possiblesMoves() {
+	   public boolean[][] possiblesMoves() {
 		boolean  [][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
 		Position p = new Position(0,0);
 		
