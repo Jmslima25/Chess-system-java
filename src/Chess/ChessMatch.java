@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import Chess.pieces.Bishop;
+import Chess.pieces.Knight;
 import Chess.pieces.Pawn;
 import Chess.pieces.Rook;
 import Chess.pieces.king;
@@ -210,11 +211,15 @@ public class ChessMatch {
 		placeNewPiece('h', 2, new Pawn(board, Color.WHITE));
 		placeNewPiece('c', 1, new Bishop(board, Color.WHITE));
 		placeNewPiece('f', 1, new Bishop(board, Color.WHITE));
+		placeNewPiece('b', 1, new Knight(board, Color.WHITE));
+		placeNewPiece('g', 1, new Knight(board, Color.WHITE));
 		placeNewPiece('a', 1, new Rook(board, Color.WHITE));
 		placeNewPiece('e', 1, new king(board, Color.WHITE));
 		placeNewPiece('h', 1, new Rook(board, Color.WHITE));
 
 		placeNewPiece('a', 8, new Rook(board, Color.BLACK));
+		placeNewPiece('g', 8, new Knight(board, Color.BLACK));
+		placeNewPiece('b', 8, new Knight(board, Color.BLACK));
 		placeNewPiece('e', 8, new king(board, Color.BLACK));
 		placeNewPiece('h', 8, new Rook(board, Color.BLACK));
 		placeNewPiece('c', 8, new Bishop(board, Color.BLACK));
